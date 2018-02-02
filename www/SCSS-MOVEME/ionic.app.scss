@@ -1,0 +1,17 @@
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.margin {
+	margin-left: 5px;
+	margin-right: 5px;
+	width: calc(100% - 10px) !important;
+}
+
+.welcome{
+    padding: 5px;
+    font-family: verdana;
+}
+
+ion-view,.pane,.view {
+	background-color: #F0F0F0;
+}
+

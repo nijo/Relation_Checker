@@ -1,0 +1,24 @@
+<ion-view title="Relation Checker" hide-back-button="true" cache-view="false" nav-transition="none" style="">
+  <ion-content padding="false" scroll="false" class="has-header">
+    <form class="list">
+      <div class="spacer" style="height: 30px;"></div>
+      <div class="show-list-numbers-and-dots welcome">
+        <p style="color:#000000;"> Please enter the first names of both the persons of which you want to check the relation.</p>
+      </div>
+      <div class="spacer" style="height: 30px;"></div>
+      <label class="item item-input item-stacked-label padding">
+        <span class="input-label">First Person</span>
+        <input placeholder="" ng-model="data.first" type="text">
+      </label>
+      <div class="spacer" style="height: 10px;"></div>
+      <label class="item item-input item-stacked-label padding">
+        <span class="input-label">Second Person</span>
+        <input placeholder="" ng-model="data.second" type="text">
+      </label>
+      <div class="spacer" style="height: 30px;"></div>
+      <button ng-click="calculate()" style="border-radius:30px 30px 30px 30px;" class="button button-positive button-block margin">Check!!!</button>
+    </form>
+    <h3 style="color: rgb(51, 205, 95);" class="padding">{{data.result}}</h3>
+    <a ui-sref="relationTips()" id="relationChecker-button2" ng-show="data.flag == 1" style="font-size:20px; text-decoration: underline; background-color: #F0F0F0" class="button button-stable button-small button-block">Get some relation tips....</a>
+  </ion-content>
+</ion-view>
